@@ -1,0 +1,13 @@
+[project]
+name = "plagiarism-analyzer"
+version = "0.45.0"
+description = "Offline plagiarism similarity analyzer using five-word fingerprints and winnowing"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+where = ["src"]

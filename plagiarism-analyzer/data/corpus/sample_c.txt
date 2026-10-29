@@ -1,0 +1,3 @@
+Modern compiler design emphasizes intermediate representations, register
+allocation strategies, and instruction scheduling. This chapter surveys
+SSA form, graph coloring, and peephole optimizations.

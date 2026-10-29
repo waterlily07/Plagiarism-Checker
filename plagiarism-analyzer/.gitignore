@@ -1,0 +1,13 @@
+﻿__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+data/plagiarism.db
+data/reports/*.json
+data/uploads/
+*.egg-info/
+.gutenberg_cache/
+project_dump.txt
+*.log
+data/corpus/gutenberg_*.txt

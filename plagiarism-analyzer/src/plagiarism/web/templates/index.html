@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Plagiarism Checker</title>
+  <style>
+    body { font-family: -apple-system, Segoe UI, sans-serif; max-width: 780px;
+           margin: 3rem auto; padding: 0 1rem; color: #222; }
+    h1 { margin-bottom: 0.2rem; }
+    .sub { color: #666; margin-top: 0; }
+    textarea { width: 100%; min-height: 260px; padding: 0.8rem;
+               font-family: inherit; font-size: 1rem; border: 1px solid #ccc;
+               border-radius: 8px; }
+    button { background: #5b3df5; color: white; border: 0; padding: 0.7rem 1.4rem;
+             font-size: 1rem; border-radius: 8px; cursor: pointer; margin-top: 1rem; }
+    button:hover { background: #4a30d0; }
+    .err { background: #ffe0e0; color: #900; padding: 0.6rem 0.9rem;
+           border-radius: 6px; margin: 1rem 0; }
+    .disc { margin-top: 2rem; font-size: 0.85rem; color: #555;
+            background: #f5f5f5; padding: 0.8rem; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Plagiarism Checker</h1>
+  <p class="sub">Offline. Your text never leaves this machine.</p>
+
+  {% if error %}<div class="err">{{ error }}</div>{% endif %}
+
+  <form method="POST" action="/analyze">
+    <textarea name="text" placeholder="Paste your document text here..."></textarea>
+    <br>
+    <button type="submit">Analyze</button>
+  </form>
+
+  <div class="disc">{{ disclaimer }}</div>
+</body>
+</html>
