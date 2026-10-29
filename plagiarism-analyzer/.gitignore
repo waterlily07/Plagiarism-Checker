@@ -11,3 +11,5 @@ data/uploads/
 project_dump.txt
 *.log
 data/corpus/gutenberg_*.txt
+data/plagiarism.db
+data/corpus/gutenberg_*.txt
